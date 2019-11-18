@@ -26,12 +26,15 @@ if(!$fbUser){
 		'picture' 		=> $fbUserProfile['picture']['data']['url'],
 		'link' 			=> $fbUserProfile['link']
 	);
+	
+	print_r($fbUserData);
+	
 	$userData = $user->checkUser($fbUserData);
 	
 	//Put user data into session
 	$_SESSION['userData'] = $userData;
 	
-	print_r($userData);
+	
 	//Render facebook profile data
 	if(!empty($userData)){
 		
