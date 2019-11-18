@@ -9,7 +9,7 @@ require_once 'inc/facebook.php';
  */
 $appId = '752842578476107'; 								//Facebook App ID(create this from 																				developer.facebook.com)
 $appSecret = 'de1066955df7feab239265eabada59aa'; 			// Facebook App Secret
-$redirectURL = 'http://fb.chasingpapers.com/'; // Callback URL i.e. page where you want to redirect after 														login, this should be same as oauth login in dashboard
+$redirectURL = 'https://calendareventss.herokuapp.com/'; // Callback URL i.e. page where you want to redirect after 														login, this should be same as oauth login in dashboard
 //$redirectURL = 'http://cp.chasingpapers.com/'; // Callback URL
 //$redirectURL = 'http://cp4.chasingpapers.com/';
 $fbPermissions = 'email';  //Required facebook permissions
