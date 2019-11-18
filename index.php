@@ -31,8 +31,10 @@ if(!$fbUser){
 	//Put user data into session
 	$_SESSION['userData'] = $userData;
 	
+	print_r($userData);
 	//Render facebook profile data
 	if(!empty($userData)){
+		
 		$output = '<h1>Facebook Profile Details </h1>';
 		$output .= '<img src="'.$userData['picture'].'">';
         $output .= '<br/>Facebook ID : ' . $userData['oauth_uid'];
